@@ -1,0 +1,290 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Laboratorio3PSB1-2022151",
+    "dateExported": "2024-03-02T16:38:56.880Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "269caddc-9909-4c32-825f-421798eed4b5",
+            "name": "Usuarios",
+            "containerId": "",
+            "created": "2024-03-02T03:12:32.882Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "82afc675-5ef3-4e5a-bc8c-3669f6b5cb6a",
+            "name": "publicaciones",
+            "containerId": "",
+            "created": "2024-03-02T03:12:32.883Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "f27b8fee-383f-4a17-abdf-cbed84494ac1",
+            "name": "Comentarios",
+            "containerId": "",
+            "created": "2024-03-02T03:12:32.884Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "19b16093-ef7a-40d9-95c0-537bef95870d",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "269caddc-9909-4c32-825f-421798eed4b5",
+            "name": "RegisterUsuario",
+            "url": "/usuario/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T03:12:32.882Z",
+            "modified": "2024-03-02T03:12:32.882Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "maria"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "dinichi"
+                    },
+                    {
+                        "name": "email",
+                        "value": "mdinichi@kinal.edu.gt"
+                    },
+                    {
+                        "name": "username",
+                        "value": "mdinichi"
+                    },
+                    {
+                        "name": "password",
+                        "value": "456"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "24681357"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "544074eb-6d88-47a7-8d04-b2492a523b51",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "269caddc-9909-4c32-825f-421798eed4b5",
+            "name": "LoginUsuario",
+            "url": "/usuario/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T03:12:32.883Z",
+            "modified": "2024-03-02T03:12:32.883Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "mdinichi@kinal.edu.gt"
+                    },
+                    {
+                        "name": "password",
+                        "value": "456"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3af5d540-a38f-4a31-9e9a-dc12611abce7",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "269caddc-9909-4c32-825f-421798eed4b5",
+            "name": "UpdateUsuario",
+            "url": "/usuario/update/65e29a161e20e22ed80533f3",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-02T03:12:32.884Z",
+            "modified": "2024-03-02T03:16:57.221Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "dinichis"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "194871b8-fea5-4180-92ff-05941ad0709d",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "82afc675-5ef3-4e5a-bc8c-3669f6b5cb6a",
+            "name": "savePublicacion",
+            "url": "/publicacion/save",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-02T03:12:32.885Z",
+            "modified": "2024-03-02T03:23:03.315Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "mensaje bla bla"
+                    },
+                    {
+                        "name": "category",
+                        "value": "random"
+                    },
+                    {
+                        "name": "PrincipalText",
+                        "value": "mensaje con mensaje bla bla"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "65e29a161e20e22ed80533f3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b773268-c2a6-4df8-ac69-c30e5d9bd53e",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "82afc675-5ef3-4e5a-bc8c-3669f6b5cb6a",
+            "name": "updatePublicacion",
+            "url": "/publicacion/update/65e29b341e20e22ed80533fe",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-02T03:12:32.886Z",
+            "modified": "2024-03-02T03:22:25.792Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "school"
+                    },
+                    {
+                        "name": "title",
+                        "value": "Mi graduación Grandiosa :D"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "12336c62-0359-4f6e-9211-ede3bec53375",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "82afc675-5ef3-4e5a-bc8c-3669f6b5cb6a",
+            "name": "deletePublicacion",
+            "url": "/publicacion/delete/65e29b971e20e22ed8053402",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-02T03:12:32.887Z",
+            "modified": "2024-03-02T03:49:36.585Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "mensaje bla bla"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "65e29a161e20e22ed80533f3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "628e4cb7-ffad-4445-8df4-00ae971a8987",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "f27b8fee-383f-4a17-abdf-cbed84494ac1",
+            "name": "saveComentario",
+            "url": "/comentario/save",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-02T03:12:32.888Z",
+            "modified": "2024-03-02T16:06:05.364Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comentary",
+                        "value": "Eso es ejercitarse ;)"
+                    },
+                    {
+                        "name": "publicacion",
+                        "value": "65e29ac81e20e22ed80533fb"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "71e34f77-f332-415f-98ec-05948f067949",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "f27b8fee-383f-4a17-abdf-cbed84494ac1",
+            "name": "updateComentario",
+            "url": "/comentario/update/65e34e016b85c8bd6074912f",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-02T16:03:40.989Z",
+            "modified": "2024-03-02T16:05:17.510Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comentary",
+                        "value": "Que delicia necesito probarla :D!"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1a5acb4c-4081-470c-bb1d-5d0fa9085b2b",
+            "colId": "40b28ea5-ee23-4fc2-9780-eec85fe5b116",
+            "containerId": "f27b8fee-383f-4a17-abdf-cbed84494ac1",
+            "name": "deleteComentario",
+            "url": "/comentario/delete/65e348966b85c8bd6074912c",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-03-02T16:06:32.052Z",
+            "modified": "2024-03-02T16:07:34.350Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
