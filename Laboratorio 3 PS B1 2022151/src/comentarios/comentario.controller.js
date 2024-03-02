@@ -10,16 +10,11 @@ export const test = (req, res) => {
 
 export const saveComment = async (req, res) => {
     try {
-        // Capturar la data
         let data = req.body
-        // Validar que el Keeper exista (Buscar a la BD)
         let publicacion = await Publicacion.findOne({ _id: data.publicacion })
         if (!publicacion) return res.status(404).send({ message: 'Keeper not found' })
-        // Crear la 'instancia' del 'Animal'
         let comentario = new Comentario(data)
-        // Guardar
         await comentario.save()
-        // Responder si todo sale bien
         return res.send({ message: 'comentario saved successfully' })
     } catch (err) {
         console.error(err)
